@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="ChatApp - Real-time messaging with video calling. Connect with friends through instant messaging, video calls, and screen sharing." />
+    <meta name="theme-color" content="#111b21" />
+    <meta name="keywords" content="chat, messaging, video call, screen sharing, real-time" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <title>ChatApp - Connect and Chat</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        // Polyfill for simple-peer: browsers use 'window' not 'global'
+        window.global = window;
+        window.process = { env: {} };
+        window.Buffer = window.Buffer || [];
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
