@@ -1,0 +1,8 @@
+postcss.config.cjs
+tailwind.config.js
+eslint.config.js
+vite.config.ts
+tsconfig*.json
+src/
+public/
+utils/
